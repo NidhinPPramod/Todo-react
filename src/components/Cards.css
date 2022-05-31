@@ -1,0 +1,15 @@
+.cards
+{
+    padding: 3rem;
+    text-align: center;
+    width: 28rem;
+    height: 75vh;
+    border-radius: 2.5rem;
+    background-color: white;
+    border:1rem solid black;
+}
+.text-page
+{
+    font-family: "Carter One";
+    color: black;
+}

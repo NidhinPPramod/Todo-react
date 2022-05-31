@@ -1,33 +1,28 @@
 import React from 'react';
 import './App.css';
+import Navbar from "./components/Navbar";
+import Completed from "./components/Completed";
+import Progress from "./components/Progress";
+import Deleted from "./components/Deleted";
+
 
 function App() {
-  return (
-      <div className="app">
-        <div className="mainHeading">
-          <h1>ToDo List</h1>
-        </div>
-        <div className="subHeading">
-          <br />
-          <h2>Whoop, it's Wednesday 🌝 ☕ </h2>
-        </div>
-        <div className="input">
-          <input type="text" placeholder="🖊️ Add item..." />
-          <i className="fas fa-plus"></i>
-        </div>
-        <div className="todos">
-          <div className="todo">
-            <div className="left">
-              <input type="checkbox" name="" id="" />
-              <p>React tutorial</p>
+    return (
+        <div>
+            <Navbar/>
+            <div className="home-background flex-row d-flex w-100  justify-content-between p-4">
+                <div>
+                    <Completed/>
+                </div>
+                <div>
+                    <Progress/>
+                </div>
+                <div>
+                    <Deleted/>
+                </div>
             </div>
-            <div className="right">
-              <i className="fas fa-times"></i>
-            </div>
-          </div>
         </div>
-      </div>
-  );
+    );
 }
 
 export default App;
