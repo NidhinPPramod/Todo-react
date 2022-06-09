@@ -1,15 +1,26 @@
 .cards
 {
+    display: flex;
+    flex-direction: column;
     padding: 3rem;
     text-align: center;
     width: 28rem;
-    height: 75vh;
+    min-height: 50rem;
     border-radius: 2.5rem;
     background-color: white;
     border:1rem solid black;
+    transition:transform 1s;
+
 }
+.cards:hover {
+    transform: scale(.9);
+}
+
 .text-page
 {
     font-family: "Carter One";
     color: black;
+}
+.card-text{
+    word-break: break-word;
 }

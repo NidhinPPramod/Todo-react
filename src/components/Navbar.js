@@ -4,7 +4,7 @@ import './Navbar.css'
 function Navbar() {
     return (
         <div className="navbar-todo col-12">
-            <div className="text-center p-4 text-white">
+            <div className="text-center p-5 text-white">
                 <h1 className="text-navbar">NIDHIN'S TO DO APP</h1>
             </div>
         </div>
